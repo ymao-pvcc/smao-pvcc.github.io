@@ -1,0 +1,132 @@
+<!DOCTYPE=html>
+
+<html lang="en">
+
+<style>
+    
+    table, td, th {
+      border: 1px solid bisque;
+    }
+    
+    table {
+      width: 90%;
+    }
+    th:first-child, td:first-child {
+    color:bisque;
+    background: chocolate;
+    }
+    th:nth-child(2), td:nth-child(2) {
+    color: chocolate;
+    background: bisque;
+    }
+    th:nth-child(3), td:nth-child(3) {
+    color: bisque;
+    background: chocolate;
+    }
+
+    td {
+      text-align: left; 
+    }
+    </style>
+<head>
+    <title>Ch5-6</title>
+</head>
+
+<body style="color:chocolate; background-color:white; font-family: calibri;">
+    <h1>Chapter 5: Computer Systems Organization</h1>
+    <h2>Student: Yi Mao</h2>
+
+<h3>Von Neumann computer architecture, 4 major subsystems:</h3>
+    <ol>
+        <li>memory</li>
+        <li>input/output</li>
+        <li>Arithmetic unit(ALU)</li>
+        <li>control unit</li>
+    </ol>
+
+<h3>Von Neumann computer architecture, 3 characteristics: </h3>
+    <ol>
+        <li>Four major subsystems</li>
+        <li>stored program concept</li>
+        <li>sequential execution of instructions</li>
+    </ol>
+
+<table>
+    <tr><td colspan="2" style="text-align: center; font-size: 15pt; background-color: chocolate; color:bisque">Computer Architecture Terms</td></tr>
+    <tr><th style="color:bisque; background-color: chocolate; width:20%">TERM</th><th style="color:chocolate">DEFINITION</th></tr>
+    <tr><td>1.RAM</td><td>(random access memory)technique that computer memory uses</td></tr>
+    <tr><td>2.cache</td><td>high-speed memory including items that were accessed most recently</td></tr>
+    <tr><td>3.Principle of locality: The high likelihood that when a program fetches a piece of data or an instruction:
+        <ol><li>when a program process data or an instruction, it will do the same in near furture</li>
+            <li>when a program process data or an instruction, it get the data or instruction near the previous ones.</li></ol>
+    </td><td></td></tr>
+    <tr><td>4.ROM</td><td>(Read-only memory) memory that can't be altered</td></tr>
+    <tr><td>5.memory cell size</td><td>how big is the memory cell</td></tr>
+    <tr><td>6.memory cell address</td><td>the location of the memory cell</td></tr>
+    <tr><td>7.maximum memory size</td><td>how many lines of memory in the random access memory</td></tr>
+    <tr><td>8.register</td><td>uses to fetch or store data</td></tr>
+    <tr><td>9.fetch</td><td><p>value = Fetch(address)</p><p>Fetch a copy of the contents of the memory cell with the specified address and return those contents as the result of the operation.</p></td></tr>
+    <tr><td>10.store</td><td><p>Store(address, value)</p><p>Store the specified value into the memory cell specified by address. </p></td></tr>
+    <tr><td>11.memory access time</td><td>time to fetch or store a piece of data, typically about 5–10 nanoseconds</td></tr>
+    <tr><td>12.DASD</td><td>(direct access storage device) DVDs, hard-drives, additional hardware storage</td></tr>
+    <tr><td>13.Arithmetic and Logic Unit (ALU)</td><td>subsystem that performs such mathematical and logical operations</td></tr>
+    <tr><td>14.Control Unit</td><td>the commander of data, fetch, decode, execute the demand to ALU (processor(the CPU))</td></tr>
+ </table>
+
+ <h1>Chapter 6:An Introduction to System Software and Virtual Machines </h1>
+
+ <h3>Four things the interface between the computer and the hardware does:</h3>
+ <ol>
+    <li>hides the messy details from hardware</li>
+    <li>translates the information to readable lanaguages</li>
+    <li>allows easy user access to the resources</li>
+    <li>protection of hardware, program, data</li>
+ </ol>
+ <h3>Responsibilities of systems software:</h3>
+ <ol>
+    <li>protection of details of internal struction of computer architecture</li>
+    <li>presents information in a way that users can understance </li>
+    <li>allows users to access to resources easily</li>
+    <li>provides a secure and safe envoirment to operate</li>
+ </ol>
+
+<table>
+    <tr><td colspan="2" style="text-align: center; font-size: 15pt; background-color: chocolate; color:bisque">Terms</td></tr>
+    <tr><th style="color:bisque; background-color: chocolate; width:20%">TERM</th><th style="color:chocolate">DEFINITION</th></tr>
+    <tr><td>1.systems software</td><td>a collection of computer programs that manage the machine resources and facilitates access for users to resources; it is intermediary between the users and the hardware</td></tr>
+    <tr><td>2.user interface</td><td>graphical images for users to understand the functions easily</td></tr>
+    <tr><td>3.language services</td><td>allows programmers to write programs efficiently</td></tr>
+    <tr><td>4.memory managers</td><td>programs that allocates data when programmers are not using them</td></tr>
+    <tr><td>5.information managers</td><td>organizing and retrieving informations</td></tr>
+    <tr><td>6.i/o managers</td><td>allows users to use input/output devices efficiently</td></tr>
+    <tr><td>7.scheduler</td><td>keeps a list of programs ready to be ran in processors </td></tr>
+    <tr><td>8. utlities</td><td>collection of useful services for users or systems</td></tr>
+    <tr><td>9.assembly language</td><td>second-generation lanauges that sped up coding from using machine languages </td></tr>
+ </table>
+
+ <h3>Functions of an Operating System</h3>
+ <ol>
+    <li>taking legal commands from users through mouse,keyboard,etc</li>
+    <li>protection of system to prevent users to do unauthorized things </li>
+    <li>efficiency in processors and management of resources </li>
+    <li>safe use of resources</li>
+ </ol>
+
+<table>
+    <tr><td colspan="3" style="text-align: center; font-size: 15pt; background-color: chocolate; color:bisque">Bytes to Base-10 Values</td></tr>
+    <tr><th style="color:bisque; background-color: chocolate; width:15%">Quantity in Bytes</th>
+        <th style="color:chocolate;width:10%">Base-10 Value</th>
+        <th style="color:bisque">Amount of Textual Information</th></tr>
+    <tr><td>1 byte</td><td>10^0</td><td>One character</td></tr>
+    <tr><td>1 kilobyte</td><td>10^3</td><td>One typed character</td></tr>
+    <tr><td>1 megabyte</td><td>10^6</td><td>Two or three novels</td></tr>
+    <tr><td>1 gigabyte</td><td>10^9</td><td>A departmental library or a large personal library</td></tr>
+    <tr><td>1 terabyte</td><td>10^12</td><td>The library of a major academic research university</td></tr>
+    <tr><td>1 petabyte</td><td>10^15</td><td>All printed material in all libraries in North America</td></tr>
+    <tr><td>1 exabyte</td><td>10^18</td><td>All words ever printed throughout human history</td></tr>
+    <tr><td>1 zettabyte</td><td>10^21</td><td>As of 2014, the total amount of information stored globally on the World Wide Web was about 4–5 zettabytes</td></tr>
+    <tr><td>1 yottabyte</td><td>10^24</td><td>According to an article in Gizmodo, a design and technology blog, storing 1 yottabyte of data on hard drives would require 1 million data centers that would fill the states of Rhode Island and Delaware</td></tr>
+
+
+
+</body>
