@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+
+<style>
+    
+    table, td, th {
+      border: 1px solid bisque;
+    }
+    
+    table {
+      border-collapse: collapse;
+      width: 90%;
+    }
+    th:first-child, td:first-child {
+    color:bisque;
+    background: #2d93ad;
+    }
+    th:nth-child(2), td:nth-child(2) {
+    color: #2d93ad;
+    background: bisque;
+    }
+
+    td {
+      text-align: left; 
+    }
+    </style>
+
+<table>
+    <tr><td colspan="2" style="text-align: center; font-size: 24pt; background-color: #2d93ad; color:bisque">Chapter 4: Network and the Internet Terminology</td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">Network Classifications</td></tr>
+    <tr><td>1.LAN</td><td>local area network; is normally consists of a group of computers in buildings</td></tr>
+    <tr><td>2.MAN</td><td>metropolitan area network; network is an intermediate size like a local community</td></tr>
+    <tr><td>3.WAN</td><td>wide area network; links computers from as far as other side of the world </td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">Network Models</td></tr>
+    <tr><td>bus network</td><td>computers comminucate to each other directly over a common bus </td></tr>
+    <tr><td>star network</td><td>computers communicate through an intermediary device in the middle </td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">Protocols</td></tr>
+    <tr><td>CSMA/CD Ethernet</td><td>each message be broadcast to all the machines on the bus</td></tr>
+    <tr><td>CSMA/CA Wifi</td><td>wireless networks adopt the policy of trying to avoid collisions rather than trying to detect them.</td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">Combining networks</td></tr>
+    <tr><td>repeater</td><td>lets wifi signals travel farther without considering the meaning of the signals</td></tr>
+    <tr><td>bridge</td><td>more complex repeater that looks at the message's destination address, forwards a message across the connection only when that message is destined for a computer on the other side.</td></tr>
+    <tr><td>switch</td><td>a bridge with multiple connections, allowing it to connect several buses.</td></tr>
+    <tr><td>router</td><td>what computers used for forwarding messages, links network and allow them to maintain their unique internal characteristics</td></tr>
+    <tr><td>gateway</td><td>passageway between the network and the outside world</td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">Client/server model</td></tr>
+    <tr><td>P2P:peer-to-peer</td><td>the client/server model inwhich the server process providing a service to numerous others (clients).</td></tr>
+    <tr><td>distributed system</td><td>has software units that execute on different computers</td></tr>
+    <tr><td>cloud computing</td><td>latest trend in distributed system;groups of shared computers on the  network can be used by clients as needed</td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">Internet Addressing</td></tr>
+    <tr><td>Tier 1</td><td>consist of very high-speed, high-capacity, international WANs</td></tr>
+    <tr><td>Tier 2</td><td>compared to tier 1, more regional in scope and less potent in their capabilities</td></tr>
+    <tr><td>Tier 3</td><td>intranet:independent internet, operated by a single authority in a business or family</td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">IP address</td></tr>
+    <tr><th style="color:bisque; background-color: #2d93ad; width:20%">TERM</th><th style="color:#2d93ad">DEFINITION</th></tr>
+    <tr><td>ICANN (add a link to: https://www.icann.org/)</td><td>Internet Corporation for Assigned Names and Numbers, nonprofit corporation for coordinating the Internet’s operation.</td></tr>
+    <tr><td>DNS</td><td>name servers that are used as an Internet-wide directory system</td></tr>
+    <tr><td>TLD:Top-level domain</td><td>suffix such as .edu or .gov</td></tr>
+    <tr><td>Country-cod TLDs (add a link to: https://www.worldstandards.eu/other/tlds/)</td><td>suffixes such as .au(Australia) or .ca(Canada) </td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">Internet protocols</td></tr>
+    <tr><td>FTP</td><td>File Transfer Protocol for an application for listing and copying files across the network </td></tr>
+    <tr><td>HTTP</td><td>Hyper Text Transfer Protocol is a network protocol</td></tr>
+    <tr><td>SMTP</td><td></td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">World Wide Web</td></tr>
+    <tr><td>URL</td><td>Uniform Resource Locator has the information needed for a browser to contact the proper server and pull up the desired document.</td></tr>
+    <tr><td>client-side activities</td><td>website that consists activities for a client such as filling out a form like a browser</td></tr>
+    <tr><td>server-side activities</td><td>website  that consists acitivities for a server such as webserver</td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">Internet four-layer software</td></tr>
+    <tr><td>application layer</td><td>where messages originated; it has software units such as clients and or servers that use Internet communication to carry out their tasks</td></tr>
+    <tr><td>transport layer</td><td>to send and receive messages over the Internet</td></tr>    
+    <tr><td>network layer</td><td>decide which direction a packet should be sent at each step through the Internet</td></tr>
+    <tr><td>link layer</td><td>transferring the packet through communicating with individual networks.</td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">Internet is: </td></tr>
+    <tr><td>packet-switching network</td><td>when data is sent by breaking it down into blocks of bits called packets. </td></tr>
+    <tr><td>fault tolerant</td><td>routing torelates errors, making internet reliability</td></tr>
+    <tr><td>redundant</td><td>reduancy of routing also helps increasing the reliability</td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">Cybersecurity </td></tr>
+    <tr><td>malware</td><td>malicious software that attacks the computer from a distance.</td></tr>
+    <tr><td>virus</td><td>software that infects a computer by inserting itself into programs</td></tr>    
+    <tr><td>worm</td><td>autonomous program that is able to transfer itself through network.</td></tr>
+    <tr><td>Trojan horse</td><td>a program that enters a computer system disguised as a desirable program</td></tr>
+    <tr><td>spyware</td><td>software that collects information about activities at the computer on which it resides</td></tr>    
+    <tr><td>phishing</td><td>technique of obtaining information explicitly by simply asking for it</td></tr>
+    <tr><td>DoS attack</td><td>denial of service, spamming, process of overloading a computer with messages</td></tr>
+
+    <tr><td colspan="2" style="text-align: center; font-size: 18pt; background-color: #2d93ad; color:bisque">Protection</td></tr>
+    <tr><td>firewall</td><td>filter traffic passing through a point in the network. </td></tr>
+    <tr><td>spam filter</td><td>firewalls designed to block unwanted, spam email</td></tr>    
+    <tr><td>proxy server</td><td>an intermediary between a client and a server, protecting the client from adverse actions of the server.</td></tr>
+    <tr><td>antivirus software</td><td>detect and remove viruses.</td></tr>
+    <tr><td>crytography</td><td>study of sending and receiving messages securely in the presence of adversaries.</td></tr>
+    <tr><td>public key encryption</td><td> transform a message into a coded version for the purpose of protection.</td></tr>
+</table>
