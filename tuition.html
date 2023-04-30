@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "en">
+<!-- Name: Yi Mao -->
+<!-- Program Purpose: This is program will a calculate tip amount based on quality of service
+-->
+<head>
+    <script type = "text/javascript">
+        function calculatetuition()
+    {
+        //constants & variables 
+        const tuit = 155
+        const inst = 1.75
+        const act = 2.90 
+        const dollar = new Intl.NumberFormat('en-US', {style:'currency',currency: 'USD'});
+        var credit = 0;
+        var tuit_amo = 0;
+        var inst_amo = 0;
+        var act_amo = 0;
+        var total_amo = 0;
+
+        //Retrieve the user data from the form, and assign the data to input variables
+        credit = document.getElementById('amount'). value;
+        
+
+        //if user does not enter a bill amount, display an error message
+        if (credit == '')
+        {
+            alert("Please enter the number of credit.");
+            return;
+        }
+
+        //calculate the total &display result
+        tuit_amo = credit * tuit
+        inst_amo = credit * inst
+        act_amo = credit * act
+        total_amo = tuit_amo + inst_amo + act_amo
+        
+        document.getElementById('tuition').value = dollar.format(tuit_amo);
+        document.getElementById('institional').value = dollar.format(inst_amo);
+        document.getElementById('activity').value = dollar.format(act_amo);
+        document.getElementById('total').value = dollar.format(total_amo);
+
+    }
+    </script>
+
+    <style>
+        body {background-color: #9d9d9d; font-family: calibri, arial, sans-serif;}
+        h2 {text-align:center;}
+        table {width:500x; color:#000000; background-color: #74b72e; border: none; font-weight:bold; }
+        td {text-align: right; padding: 10px;} 
+        input {width: 150px; font-weight:bold; }
+        input,select {width: 80%; border: none; border-bottom: 1px solid #000000; padding: 10px}
+    </style>
+</head>
+<body>
+    <form>
+    <table>
+        <tr><td colspan = "2"> <h2> PVCC TUTION & FEES CALCULATOR </h2></td></tr>
+        <tr><td> Number of credits: </td>
+            <td><input type = "text" id = "amount" placeholder = "Credits here" /> </td></tr>
+        <tr><td colspan = "2" style = "text-align: center;"> 
+            <input type = "button" value = "Calculate tuition and fees"
+            class = "button" onclick = "calculatetuition() " /> </td></tr>
+        <tr><td><input type = "reset"></td></tr>
+        <tr style = "font-weight:hold; font-size: 1.2em; text-align:left;">
+            <td> Tuition: </td>
+            <td><input type = "text" id = "tuition" placeholder = "0" /> </td></tr>
+        <tr style = "font-weight:hold; font-size: 1.2em; text-align:left;">
+            <td> Institutional Fee: </td>
+            <td><input type = "text" id = "institional" placeholder = "0" /> </td></tr>
+        <tr style = "font-weight:hold; font-size: 1.2em; text-align:left;">
+            <td> Student activity fee: </td>
+            <td><input type = "text" id = "activity" placeholder = "0" /> </td></tr>
+        <tr style = "font-weight:hold; font-size: 1.2em; text-align:left;">
+            <td> TOTAL: </td>
+            <td><input type = "text" id = "total" placeholder = "0" /> </td></tr>
+    </table>
+    </form>
+</body>
+</html>
+
+
